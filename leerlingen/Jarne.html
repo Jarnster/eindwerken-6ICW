@@ -1,57 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <title>Slimme plantenmonitor - Nicky</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Platform voor toekomstige autonome mobiliteit - Jarne</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Slimme plantenmonitor</h1>
-        <p>Door: Nicky Vergauwen</p>
+      <h1>Platform voor toekomstige autonome mobiliteit</h1>
+      <p>Door: Jarne Verlinden</p>
     </header>
 
     <main>
-        <section>
-            <h2>Probleemstelling</h2>
-            <p>Planten krijgen te weinig water in de klas…</p>
-        </section>
+      <a href="../assets/jarne/6icw_eindwerk_conceptueel_jarne.pdf">Bekijk PDF</a>
+      <section>
+        <h2>1. Situering</h2>
+        <p>
+          Mobiliteit staat steeds meer onder druk: meer files, voertuigen die
+          niet efficiënt worden gebruikt en een groeiende vraag naar flexibel
+          vervoer. Tegelijk worden auto’s autonomer en zijn diensten zoals
+          deelwagens (Cambio, Poppy) en ritplatformen (Uber, Bolt) populair.
+          Door zelfrijdende voertuigen te combineren met een dienstmodel kan
+          mobiliteit duurzamer, efficiënter en flexibeler worden. In zo’n model
+          blijven voertuigen eigendom van een vlootbeheerder (of de fabrikant
+          zelf) en worden ze optimaal ingezet. Vandaag is dat moeilijker omdat
+          menselijke chauffeurs eigen voertuigen, werkuren en voorkeuren hebben
+          waardoor een volledige, centrale en voorspellende planning nu beperkt
+          is.
+        </p>
+      </section>
 
-        <section>
-            <h2>Doelstellingen</h2>
-            <ul>
-                <li>Planten automatisch water geven bij droogte</li>
-                <li>Waarschuwing naar smartphone sturen</li>
-            </ul>
-        </section>
+      <section>
+        <h2>2. Doel en functionaliteiten</h2>
+        <p>
+          Ik ontwikkel graag een cloudgebaseerd platform voor dit toekomstige
+          mobiliteitsmodel dat meerdere functionaliteiten moet kunnen bieden.
+          Het systeem bepaalt automatisch welk voertuig welke rit uitvoert, via
+          welke route, en of ritten gedeeld worden. Gebruikers kunnen een rit
+          aanvragen met keuzes in comfort en mate van ritdeling, wat ook de
+          prijs beïnvloedt. Beheerders kunnen de vloot beheren, krijgen een
+          overzicht van de voertuigen en geplande ritten en kunnen de planning
+          beperkt aanpassen. Het systeem toont daarnaast een overzicht van
+          geplande, actieve en afgewerkte ritten met route, tijd en prijs.
+        </p>
+      </section>
 
-        <section>
-            <h2>Technologie</h2>
-            <ul>
-                <li>Python</li>
-                <li>ESP32</li>
-                <li>MQTT</li>
-            </ul>
-        </section>
+      <section>
+        <h2>3. Motivatie</h2>
+        <p>
+          Ik wil met programmeren concrete problemen helpen oplossen.
+          Technologische evoluties interesseren mij sterk. Ik rijd graag, maar
+          files storen me. Met slimme software en dienstmodellen kunnen we
+          mobiliteit efficiënter, duurzamer en flexibeler maken. Dit project
+          past daar heel goed bij.
+        </p>
+      </section>
 
-        <section>
-            <h2>Foto’s / Screenshots</h2>
-            <img src="../img/plant_sensor.jpg" alt="Sensor setup" width="400">
-        </section>
+      <section>
+        <h2>4. Afbakening en uitbreidingsmogelijkheden</h2>
+        <p>
+          gebruikt een beperkte vloot voertuigen, een beperkt aantal klanten en
+          keuzes, en verwerkt enkel vooraf aangevraagde ritten. De mogelijke
+          verkeersdruktes en prijsberekening blijven eenvoudig. Geavanceerde
+          functionaliteiten zoals realtime herplanning, onderhouds‑ en
+          pannebeheer, machine learning voor verkeersanalyse, complexe
+          prijsmodellen en uitgebreide beheerdersfuncties, vallen buiten de
+          scope, maar kunnen later als uitbreidingen worden toegevoegd dankzij
+          de modulaire opbouw.
+        </p>
+      </section>
 
-        <section>
-            <h2>Planning</h2>
-            <p>Krokus: basis sensor | Paasvakantie: IoT integratie | Juni: eindversie & demo</p>
-        </section>
+      <section>
+        <h2>5. Technische uitwerking</h2>
+        <ul>
+          <li>
+            Architectuur: cloudgebaseerd; prototype als webapp of console-app
+          </li>
+          <li>
+            Netwerkcommunicatie: via mobiele netwerken (zoals 5G) en robuuste
+            routing met VyOS
+          </li>
+          <li>Betrouwbaarheid: caching en failovermechanismen</li>
+          <li>
+            Techstack: Backend: SQL + Python en/of Node.js en/of PHP Frontend:
+            HTML/CSS/JS en/of TypeScript/React en/of Bootstrap/Tailwind
+          </li>
+          <li>
+            Dataopslag: Databank met tabellen voor voertuigen, ritaanvragen,
+            toewijzingen, ritstatus
+          </li>
+          <li>Externe APIs: OpenStreetMap API of Google Maps API</li>
+          <li>
+            De bedoeling is dus dat dit project netwerkpakketten uitstuurt
+            volgens een voorafgedefinieerd formaat naar deze autonome
+            voertuigen, die op hun beurt het autonoom rijden uitvoeren met
+            behulp van deze aangeleverde data. De nadruk ligt op algoritmen
+            (zoals Dijkstra) en datamodellering; de gebruikersinterface blijft
+            bewust eenvoudig.
+          </li>
+        </ul>
+      </section>
 
-        <section>
-            <h2>Reflectie</h2>
-            <p>Leerlingen leren over IoT, programmeren en projectplanning.</p>
-        </section>
+      <section>
+        <h2>Foto's / Screenshots</h2>
+        <img src="../assets/jarne/img.png" alt="Mini Demo web" width="400" />
+      </section>
     </main>
 
     <footer>
-        <p><a href="../index.html">Terug naar overzicht</a></p>
+      <p><a href="../index.html">Terug naar overzicht</a></p>
     </footer>
-</body>
+  </body>
 </html>
